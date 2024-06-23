@@ -108,3 +108,62 @@
 - Because union is elements that are in both sets, to find `n(A ∪ B)`, we need to add `n(A)` + `n(B)`, then subtract the cardinal number of `A ∩ B`
 ### Definitions
 - `union`: new set formed by joining two sets together, all elements in one set or the other or both
+
+### Complement of a Set
+- Universal set is all elements under consideration
+- Complement of a set is all of the elements of the universal set that are outside of the set under consideration
+  - Notated by `A'` ("A prime")
+  - `A' = {X | X ∈ U and X ∉ A}`
+- Complement of the universal set is an empty set, complement of an empty set is the universal set
+- No element of the universal set can be in both A and A' at the same time
+  - Sum of cardinal numbers of A and A' is the cardinal number of U
+- Cardinal number rule for the complement of a set
+  - `n(A) + n(A') = n(U)`
+  - `n(A) = n(U) - n(A')`
+  - `n(A') = n(U) - n(A)`
+
+### Set Theory & Logic
+- Logic involves using English sentences called "statements", must be able to be True or False, but not both
+- Compound statements are multiple statements put together
+  - "If/Then" is a particular kind of compound statement
+  - "Or" is another kind of compound statement
+- Statements are often designated with `p` and `q`
+- Negation = "not" = `~p`
+- Conjunction = "and" = `∧`
+- Disjunction = "or" = `∨`
+- Conditional = "If...then" = `→`
+- Biconditional = "If and only if" = `<->`
+- Set theory and logic have many similarities
+  - For example, union and disjunction are the same meaning, but used in different circumstances
+
+| Set Theory   | Logic       | Common Wording  |
+|--------------|-------------|-----------------|
+| union        | disjunction | or              |
+| intersection | conjunction | and             |
+| complement   | negation    | not             |
+| subset       | conditional | if ... then ... |
+
+## 2.2 Applications of Venn Diagrams
+### Surveys
+- Surveys are often used to divide people and objects, but categories often overlap and people are in more than one category
+- Solving a cardinal number problem
+  - Define a set for each category in the universal set
+  - Draw a Venn diagram with as many overlapping circles as number of sets
+  - Write down all given cardinal numbers for each set
+  - Starting with innermost overlap, fill in each region of Venn diagram
+- "Union/Intersection Rule"
+  - `n(T ∪ C) = n(T) + n(C) - n(T ∩ C)`
+
+### De Morgan's Laws
+- Basic property of algebra is the distributive property
+  - `a(b + c) = ab + ac`
+  - Operation outside of the parentheses (a) is distributed to the operation inside the parentheses
+- Relationship of `(A ∪ B)' = A' ∩ B'` is known as one of De Morgan's Laws
+  - That is, the complement of a union is the intersection of the complements
+- Additionally `(A ∩ B)' = A' ∪ B'`
+  - That is the complement of an intersection is the union of the complements
+- To find the intersection of two sets
+  - Given `n(A) = 15, n(B) = 32, n(A ∪ B) = 41`
+  - `n(A ∪ B) = n(A) + n(B) - n(A ∩ B)`
+  - `41 = 15 + 32 - n(A ∩ B)`
+  - `n(A ∩ B) = 6`
