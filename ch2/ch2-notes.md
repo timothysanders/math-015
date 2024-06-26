@@ -167,3 +167,64 @@
   - `n(A ∪ B) = n(A) + n(B) - n(A ∩ B)`
   - `41 = 15 + 32 - n(A ∩ B)`
   - `n(A ∩ B) = 6`
+
+## 2.3 Introduction to Combinatorics
+### The Fundamental Principle of Counting
+- Also known as the "counting principle"
+- Number of items in a sample space is important
+- Multiply number of possibilities of each part in an overall experiment
+  - For example, how many combinations might there be of a coin toss combined with rolling a die?
+    - We would multiply the coin toss outcomes (2) by the number of dice outcomes (6) = 12
+- Certain solutions are meant for problems "without replacement" vs. "with replacement"
+- How many 3-digit area codes are possible if the first digit cannot be 0?
+  - Because we cannot have a zero at the beginning, we would multiple the following
+    - 9 * 10 * 10 = 900
+- Tree diagrams can also be used to identify possible combinations of choices/outcomes
+  - However, this method is very time-consuming and impractical for larger problem sets
+  - A shortcut method is desirable instead
+- If you have two pairs of jeans, three shirts, and two pairs of shoes, how many outfits can you make?
+  - 2 * 3 * 2 = 12 outfits
+### Definitions
+- `tree diagram`: a diagram consisting of clusters of line segments, or branches
+- `fundamental principle of counting`: total number of possible outcomes of a series of decisions found by multiplying the number of choices for each decision/category
+
+### Factorials
+- Factorials are notated as `n!`
+  - For example, `3! = 3 * 2 * 1 = 6`
+  - `4! = 4 * 3 * 2 * 1`
+  - `0! = 1` - this is a special case
+  - `8! = 8 * 7!`
+- Can use factorial notation for some division problems as well
+  - `9!/6!` can be also represented as `(9 * 8 * 7 * 6!)/6!`
+  - `6!` cancels out and we are left with `9 * 8 * 7 = 504`
+- If n is a positive integer, then n factorial is notated like `n!` and is the product of all positive integers less than or equal to n
+### Definitions
+- `Pascal's Triangle`: gives you the coefficients of an expansion of a binomial
+
+## 2.4 Permutations & Combinations
+- Fundamental principle of counting allows you to determine the total number of possible outcomes when a series of decisions needs to be made
+- This can also be applied to scenarios where more than one item is selected from each category
+
+### With vs Without Replacement
+- Selecting items "with replacement" means the same item can be picked more than once
+- Selecting items "without replacement" means the same item cannot be picked more than once
+- When selecting items without replacement, permutations and combinations are used to determine total possible outcomes
+
+### Permutations
+- When more than one item is selected without replacement from a category, and the order is important, these outcomes are called permutations
+- Order is always important in permutations
+- Permutation notation can be written as `P(n,r)` 
+  - `P(8,3)` translates to `8!/(8-3)!`
+- Example, six bands who will be playing in four slots `P(6,4)`
+  - `6!/(6-4)! = 6 * 5 * 4 * 3 = 360`
+- Example, 112 attendees and three prizes `P(112,3)`
+  - `112!/(112-3)! = 112 * 111 * 110 = 1,367,520`
+### Definitions
+- `permutation`: arrangement of objects in a definite order
+
+### Combinations
+- If the order of selections is not important, than those possible outcomes are called "combinations"
+- Combination notation can be written as `C(n,k)`
+- Formula is `n!/k!(n-k)!`
+### Definitions
+- `combination`: order is not important, words like group, team, and committee are often used
