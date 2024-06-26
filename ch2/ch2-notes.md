@@ -36,7 +36,7 @@
 - `ℝ` is used to notate "set of real numbers"
 - `∅` is used to notate an "empty set"
 ### Definitions
-- `set`: collection of objects or things
+- `set`: collection of objects, things, numbers
 - `elements/members`: objects or things in a set
 - `well defined set`: sets where there is a particular way of determining for sure whether or not an item is a member of a set
 - `roster notation/listing notation`: method of describing a set by listing each element of the set inside the symbols `{}`
@@ -94,7 +94,7 @@
   - For example, `A ∪ B = {1, 2, 3, 4, 5}`
 ### Definitions
 - `intersection`: all elements in A and B, the overlap of the two sets
-- `union`: all elements in A or B
+- `union`: all elements in A or B, elements in either set, or both
 
 ### Mutually Exclusive Sets
 - Pairs of sets may have no overlaps
