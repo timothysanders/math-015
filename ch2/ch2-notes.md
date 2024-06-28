@@ -215,6 +215,7 @@
 - Order is always important in permutations
 - Permutation notation can be written as `P(n,r)` 
   - `P(8,3)` translates to `8!/(8-3)!`
+  - In this formula, `n` is the number of elements in the pool and `r` is the number of elements selected
 - Example, six bands who will be playing in four slots `P(6,4)`
   - `6!/(6-4)! = 6 * 5 * 4 * 3 = 360`
 - Example, 112 attendees and three prizes `P(112,3)`
@@ -223,8 +224,40 @@
 - `permutation`: arrangement of objects in a definite order
 
 ### Combinations
-- If the order of selections is not important, than those possible outcomes are called "combinations"
-- Combination notation can be written as `C(n,k)`
-- Formula is `n!/k!(n-k)!`
+- If the order of selections is not important, then those possible outcomes are called "combinations"
+- Combination notation can be written as `C(n,r)`
+- When `r` items are selected from a pool of `n` items
+  - Formula is `n!/r!(n-r)!`
+  - Note that this formula only works when items are selected without replacement
+  - Example, five DVDs from a group of fifty
+    - `C(50,5)`
+    - `50!/5!(50-5)!` -> `50!/5!45!` -> `50*49*48*47*46/5*4*3*2*1`
+  - Example, five card poker hands?
+    - `C(52,5)`
+    - `52!/5!(52-5)!` -> `(52*51*50*49*48*47)/(5*4*3*2*1)`
+- When calculating combinations of groups, you can multiply them together
+  - Example, select five-person committee from 12 women and 9 men
+    - Must contain 3 women and 2 men
+    - `C(12,3) * C(9,2)` -> `220 * 36 = 7920`
+    - Any combination of people
+    - `C(21,5) = 20349`
+- Important aspect of combinatorics is deciding which technique to use
+  - Can selected items be repeated? -> Fundamental Principle of Counting
+  - If more than one category...
+    - And order of items matters -> Use permutations
+    - And order of items doesn't matter -> Use combinations
+  - If order of selections does not matter -> Use combinations
+  - If order of selections does matter -> Use permutations
 ### Definitions
 - `combination`: order is not important, words like group, team, and committee are often used
+- `pascal's triangle`
+
+### Permutations of Identical Items
+- For example, how many different ways can the letters of SEE be arranged?
+  - Note that two letters are identical
+  - `n!/x!` where `n` is the number of letters (in SEE) and `x` is the number of identical letters
+- Dividing by the factorial of the repeated letter eliminates the duplicate arrangements
+- This formula can be extended
+  - For example, `n!/x!y!z!...`
+### Definitions
+- `distinguishable permutations`: 
