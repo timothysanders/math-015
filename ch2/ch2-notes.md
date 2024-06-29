@@ -212,8 +212,10 @@
 
 ### Permutations
 - When more than one item is selected without replacement from a category, and the order is important, these outcomes are called permutations
+- Permutation is putting a group of things in order, if order matters, it is a permutations
 - Order is always important in permutations
 - Permutation notation can be written as `P(n,r)` 
+  - Formula is `n!/(n-r)!`
   - `P(8,3)` translates to `8!/(8-3)!`
   - In this formula, `n` is the number of elements in the pool and `r` is the number of elements selected
 - Example, six bands who will be playing in four slots `P(6,4)`
@@ -225,6 +227,7 @@
 
 ### Combinations
 - If the order of selections is not important, then those possible outcomes are called "combinations"
+- Combinations groupings of things, if order does not matter, then it can be a combination
 - Combination notation can be written as `C(n,r)`
 - When `r` items are selected from a pool of `n` items
   - Formula is `n!/r!(n-r)!`
